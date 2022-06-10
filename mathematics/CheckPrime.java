@@ -2,9 +2,9 @@ package mathematics;
 
 public class CheckPrime {
     public static void main(String[] args) {
-        System.out.println(isPrimeBasic(12));
-        System.out.println(isPrimeEffeicentWay(11));
-        System.out.println(moreEfficentWay(11));
+        System.out.println(isPrimeBasic(49));
+        System.out.println(isPrimeEffeicentWay(49));
+        System.out.println(moreEfficentWay(49));
     }
     public static boolean isPrimeBasic(int n){
         if(n==1) return false;
@@ -17,7 +17,7 @@ public class CheckPrime {
     public static boolean isPrimeEffeicentWay(int n){
         if(n==1) return false;
 
-        for(int i=2;i*i<n;i++){
+        for(int i=2;i*i<=n;i++){
             if(n%i==0) return false;
         }
         return true;
