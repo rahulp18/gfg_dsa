@@ -13,7 +13,7 @@ public class CheckNthbit {
             System.out.println("NOT VALID SET");
         }
     }
-    // usc ing Right shift
+    // ussing Right shift
     public static void method2(int  n,int k){
  if((1& (n >> (k-1) ))==1){
      System.out.println("Set");
