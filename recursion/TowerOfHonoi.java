@@ -2,7 +2,7 @@ package recursion;
 
 public class TowerOfHonoi {
     public static void main(String[] args) {
-        TOH(3, 'A', 'B', 'C');
+        TOH(4, 'A', 'B', 'C');
     }
     public static void TOH(int n,char A, char B,char C){
         if(n==1){
