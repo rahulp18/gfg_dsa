@@ -7,7 +7,7 @@ public class DeleteOfElement {
         int arr[]={2,12,45,82,8};
      
           
-    deleteElement(arr, 78);
+    deleteElement(arr, 12);
  
     }
     public static void deleteElement(int arr[],int x){
