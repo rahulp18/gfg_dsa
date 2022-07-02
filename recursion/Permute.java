@@ -4,7 +4,7 @@ public class Permute {
     public static void main(String[] args) {
   
  
- permute("ABC", 0);
+ permute("Rahul", 2);
        
     }
     
