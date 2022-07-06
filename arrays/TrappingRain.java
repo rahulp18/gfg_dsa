@@ -2,7 +2,7 @@ package arrays;
 
 public class TrappingRain {
     public static void main(String[] args) {
-         int arr[]={5,0,6,2,3};
+         int arr[]={7,4, 0, 9};
         //  System.out.println(getWater(arr));
         System.out.println(efficentWay(arr, arr.length));
     }
