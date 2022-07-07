@@ -9,7 +9,7 @@ public class GameOfChocolate {
           if(a>b){
           int temp=a;
           a=b;
-          b=a;
+          b=temp; 
       }
       int k=b-a;
         double d= 1 +Math.sqrt(5);
