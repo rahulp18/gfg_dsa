@@ -2,7 +2,7 @@ package searching;
 
 public class CountOnes {
     public static void main(String[] args) {
-        int arr[]={1,1,1,1,1,1,1};
+        int arr[]={0,1,1,1,1,1,1};
         System.out.println(countOnes(arr,arr.length));
     }
     public static int countOnes(int arr[],int n){
