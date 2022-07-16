@@ -2,7 +2,7 @@ package arrays;
 
 public class CountOnes {
     public static void main(String[] args) {
-        int arr[]={1,1,1,1};
+        int arr[]={1,1,1,1,0,1,1,0};
         System.out.println(counts(arr));    
     }
     public static int counts(int arr[]){
