@@ -1,7 +1,7 @@
 package searching;
 public class FindPeak{
     public static void main(String[] args) {
-        int arr[]={80,70,90};
+        int arr[]={70,90};
         
         System.out.println(findPeak(arr, arr.length));
         System.out.println(arr[getAPeak(arr, arr.length)]);
