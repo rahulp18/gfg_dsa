@@ -4,7 +4,7 @@ public class IsSumPresent {
     public static void main(String[] args) {
         int arr[]={1,4,20,3,10,5};
                    
-        System.out.println(isSubSum(arr, 34));
+        System.out.println(isSubSum(arr, 15));
 
 
     }
@@ -13,7 +13,7 @@ public class IsSumPresent {
         int currSum=arr[0];
         int start=0;
 
-        for(int end=1;end<arr.length;end++){
+        for(int end=1;end<=arr.length;end++){
             while(currSum>sum && start<end-1){
                 currSum=currSum-arr[start];
                 start++;
@@ -21,10 +21,12 @@ public class IsSumPresent {
             if(sum==currSum){
                 return true;
             }
-            if(end<arr.length){
-    currSum=currSum+arr[end];
+         if(end<arr.length){
 
-            }
+             currSum=currSum+arr[end];
+         }
+
+           
         }
 
         return currSum==sum;
