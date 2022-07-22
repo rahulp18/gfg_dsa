@@ -20,7 +20,7 @@ public class BubbleSort {
                     isSwap=true;
                 }
               }
-              if(isSwap=false){
+              if(isSwap==false){
                 break;
               }
            }
