@@ -2,7 +2,7 @@ package sorting;
 
 public class HoareSPartition {
     public static void main(String[] args) {
-        int arr[]={5,3,8,4,2,7,1,10};
+        int arr[]={5,3,8,4,4,7,1,10};
         System.out.println(hPartition(arr, 0, arr.length-1));
         for (int i : arr) {
           System.out.print(i+" ");
