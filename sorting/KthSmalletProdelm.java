@@ -2,8 +2,8 @@ package sorting;
 
 public class KthSmalletProdelm {
     public static void main(String[] args) {
-        int arr[] = new int[]{10,4,5,8,11,6,26};
-        System.out.println(arr[findEle(arr, arr.length, 5)]);;
+        int arr[] = new int[]{3 ,5,4,2,9};
+        System.out.println(arr[findEle(arr, arr.length, 3)]);;
     }
     public static int findEle(int arr [],int n,int k){
         int l=0,r=n-1;
