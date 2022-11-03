@@ -10,6 +10,7 @@ public class ReverseStringByWords {
         String str = sc.nextLine();
 
         System.out.println(reverseString(str));
+        sc.close();
     }
 
     public static String reverseString(String str) {
