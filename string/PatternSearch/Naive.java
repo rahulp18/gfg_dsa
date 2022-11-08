@@ -12,6 +12,7 @@ public class Naive {
         String pat = sc.nextLine();
 
         patSearchinng(text, pat);
+        sc.close();
     }
 
     static void patSearchinng(String txt, String pat) {
