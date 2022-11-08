@@ -7,23 +7,34 @@ public class ReverseStringByWords {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter String to reverse");
-        String str = sc.nextLine();
-
-        System.out.println(reverseString(str));
+        String s = sc.nextLine();
+        char[] str = s.toCharArray();
+        reversWord(str, s.length());
+        System.out.println(new String(str));
         sc.close();
     }
 
-    public static String reverseString(String str) {
-        String rev = "";
-        int end = str.length();
-        for (int i = str.length() - 1; i >= 0; i--) {
-            if (str.charAt(i) == ' ' || i == 0) {
-                rev += str.substring(i, end);
-                end = i;
-                rev += " ";
+    public static void reversWord(char[] str, int n) {
+        int start = 0;
+        for (int end = 0; end < n; end++) {
+            if (str[end] == ' ') {
+                reverse(str, start, end - 1);
+                start = end + 1;
             }
         }
-
-        return rev;
+        reverse(str, start, n - 1);
+        reverse(str, 0, n - 1);
     }
+
+    public static void reverse(char[] str, int start, int end) {
+        while (start <= end) {
+            // swap
+            char temp = str[start];
+            str[start] = str[end];
+            str[end] = temp;
+            start++;
+            end--;
+        }
+    }
+
 }
