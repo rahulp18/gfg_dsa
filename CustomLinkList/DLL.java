@@ -19,10 +19,8 @@ public class DLL {
         Node new_node = new Node(data);
         Node last = head;
 
-        new_node.next = head;
-
         if (head == null) {
-            new_node.prev = null;
+
             head = new_node;
             return;
         }
