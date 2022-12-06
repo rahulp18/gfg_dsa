@@ -2,15 +2,15 @@ package CustomLinkList;
 
 public class Main {
     public static void main(String[] args) {
-        SortedInsert obj = new SortedInsert();
+        // SortedInsert obj = new SortedInsert();
 
-        obj.insert(1);
-        obj.insert(5);
-        obj.insert(3);
-        obj.insert(2);
-        obj.insert(4);
+        // obj.insert(1);
+        // obj.insert(5);
+        // obj.insert(3);
+        // obj.insert(2);
+        // obj.insert(4);
 
-        obj.PrintLinkList();
+        // obj.PrintLinkList();
         // DLL obj = new DLL();
         // obj.insertAtHead(10);
         // obj.insertAtHead(895);
@@ -32,6 +32,14 @@ public class Main {
         // obj.deleteFromTail();
         // obj.deleteFromTail();
         // obj.printDLL();
+        InsertAtSoeted lnk = new InsertAtSoeted();
+
+        lnk.insert(333);
+        lnk.insert(88);
+        lnk.insert(78);
+        lnk.insert(74);
+
+        lnk.PrintLinkList();
     }
 
 }
