@@ -1,5 +1,7 @@
 package CustomLinkList;
 
+import java.util.ArrayList;
+
 public class LinkedList {
     Node head;
     int Count = 0;
@@ -48,6 +50,35 @@ public class LinkedList {
 
         }
         System.out.println(slow.data);
+    }
+
+    public void reverseList() {
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        Node temp = head;
+        while (temp != null) {
+            list.add(temp.data);
+            temp = temp.next;
+        }
+
+        head = null;
+        for (int i = list.size() - 1; i >= 0; i--) {
+
+            insert(list.get(i));
+        }
+    }
+
+    public void efficentWayTReverse() {
+        Node curr = head;
+        Node prev = null;
+        while (curr != null) {
+            Node next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+
+        }
+        ;
+
     }
 
     public int Length() {

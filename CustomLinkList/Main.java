@@ -32,14 +32,19 @@ public class Main {
         // obj.deleteFromTail();
         // obj.deleteFromTail();
         // obj.printDLL();
-        InsertAtSoeted lnk = new InsertAtSoeted();
+        // InsertAtSoeted lnk = new InsertAtSoeted();
+        LinkedList obj = new LinkedList();
 
-        lnk.insert(333);
-        lnk.insert(88);
-        lnk.insert(78);
-        lnk.insert(74);
+        obj.insert(12);
+        obj.insert(15);
+        obj.insert(18);
+        obj.insert(89);
+        // obj.PrintLinkList();
+        obj.PrintLinkList();
+        obj.reverseList();
+        System.out.println();
+        obj.PrintLinkList();
 
-        lnk.PrintLinkList();
     }
 
 }
